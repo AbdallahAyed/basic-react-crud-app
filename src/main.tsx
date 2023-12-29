@@ -1,13 +1,26 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
-import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
+
+import App from "./App.tsx";
+import Products from "./Products.tsx";
+import Categories from "./Categories.tsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children: [
+      {
+        path: "/products",
+        element: <Products />,
+      },
+      {
+        path: "/categories",
+        element: <Categories />,
+      },
+    ],
   },
 ]);
 
