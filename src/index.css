@@ -4,4 +4,33 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+aside {
+  height: 100vh;
+  width: 20vw;
+  background-color: rgb(247, 249, 252);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    font-weight: 600;
+    font-size: 34px;
+    text-decoration: none;
+    color: rgb(19, 26, 37);
+    padding-bottom: 10px;
+  }
+  ul {
+    list-style: none;
+    color: rgb(0, 119, 255);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 20px;
+    li {
+      padding-bottom: 20px;
+      cursor: pointer;
+    }
+  }
 }
