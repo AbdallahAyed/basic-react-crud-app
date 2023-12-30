@@ -97,3 +97,38 @@ aside + div {
     }
   }
 }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  h1 {
+    color: rgb(4, 0, 22);
+    font-family: system-ui;
+    font-size: 34px;
+  }
+  .container {
+    margin-top: 20px;
+    p {
+      position: relative;
+      top: 30px;
+      font-size: 22px;
+    }
+  }
+  img {
+    width: 200px;
+  }
+  span {
+    position: relative;
+    bottom: 120px;
+    font-size: 25px;
+    margin: 10px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: rgb(30, 50, 51);
+    svg {
+      margin-right: 10px;
+      fill: rgb(255, 208, 0);
+    }
+  }
+}

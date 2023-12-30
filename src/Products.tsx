@@ -1,12 +1,18 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-type Product = {
+export type ProductType = {
   id: number;
   title: string;
   price: number;
+  description: string;
+  category: string;
   image: string;
-  operations: React.ReactNode;
+  rating: {
+    rate: number;
+    count: number;
+  };
 };
 
 function Products() {
@@ -22,7 +28,6 @@ function Products() {
         console.log(error);
       });
   }, []);
-  console.log(data);
 
   return (
     <div className="products">
@@ -39,7 +44,7 @@ function Products() {
           </tr>
         </thead>
         <tbody>
-          {data?.map((product: Product) => (
+          {data?.map((product: ProductType) => (
             <tr key={product.id}>
               <td>{product.id}</td>
               <td>{product.title.slice(0, 12)}</td>
@@ -48,7 +53,9 @@ function Products() {
                 <img src={product.image} alt="img" />
               </td>
               <td>
-                <button>View</button>
+                <Link to={`/products/${product.id}`}>
+                  <button>View</button>
+                </Link>
                 <button>Edit</button>
                 <button>Delete</button>
               </td>
