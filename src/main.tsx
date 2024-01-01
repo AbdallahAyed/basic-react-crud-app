@@ -10,6 +10,7 @@ import ErrorPage from "./ErrorPage.tsx";
 import Home from "./Home.tsx";
 import ProductDetails from "./ProductDetails.tsx";
 import AddProduct from "./AddProduct.tsx";
+import { ProductsProvider } from "./context/ProductsContext.tsx";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ProductsProvider>
+      <RouterProvider router={router} />
+    </ProductsProvider>
   </React.StrictMode>
 );
