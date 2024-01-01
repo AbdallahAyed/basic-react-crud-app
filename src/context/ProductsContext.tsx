@@ -2,7 +2,6 @@ import { useState, createContext, ReactNode, useContext } from "react";
 import { ProductType } from "../Products";
 import axios from "axios";
 import Swal from "sweetalert2";
-import { useNavigate } from "react-router-dom";
 
 interface ProductsContextType {
   newProduct: ProductType;
@@ -34,7 +33,6 @@ export const ProductsProvider: React.FC<ProductsProviderProps> = ({
       count: 0,
     },
   });
-  const navigate = useNavigate();
 
   const formSubmit = (e: React.SyntheticEvent) => {
     e.preventDefault();
@@ -66,7 +64,6 @@ export const ProductsProvider: React.FC<ProductsProviderProps> = ({
       showConfirmButton: false,
       timer: 1500,
     });
-    navigate(-1);
   };
 
   const contextValue: ProductsContextType = {

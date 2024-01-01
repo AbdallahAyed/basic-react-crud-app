@@ -1,7 +1,9 @@
+import { useNavigate } from "react-router-dom";
 import { useProducts } from "../context/ProductsContext";
 
 function Form() {
   const { formSubmit, newProduct, setNewProduct } = useProducts();
+  const navigate = useNavigate();
 
   return (
     <form onSubmit={formSubmit}>
@@ -91,7 +93,7 @@ function Form() {
         }
       />
 
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" onClick={() => navigate(-1)} />
     </form>
   );
 }
