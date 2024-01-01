@@ -9,6 +9,7 @@ import Categories from "./Categories.tsx";
 import ErrorPage from "./ErrorPage.tsx";
 import Home from "./Home.tsx";
 import ProductDetails from "./ProductDetails.tsx";
+import AddProduct from "./AddProduct.tsx";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ const router = createBrowserRouter([
       {
         path: "/products/:id",
         element: <ProductDetails />,
+      },
+      {
+        path: "/products/addn-new-product",
+        element: <AddProduct />,
       },
     ],
   },

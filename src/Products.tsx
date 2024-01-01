@@ -67,7 +67,10 @@ function Products() {
     <div className="products">
       <h1>Products Home</h1>
 
-      <button className="add-product">Add new product</button>
+      <Link to={`/products/addn-product-page`}>
+        {" "}
+        <button className="add-product">Add new product</button>
+      </Link>
       <table>
         <thead>
           <tr>

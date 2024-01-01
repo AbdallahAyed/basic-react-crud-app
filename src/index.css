@@ -150,3 +150,32 @@ aside + div {
     background-color: rgb(9, 112, 9);
   }
 }
+
+.add-product-page {
+  form {
+    display: grid;
+
+    input {
+      padding: 13px 20px;
+      margin: 10px;
+      width: 400px;
+      border: 0;
+      box-shadow: 1px 3px 20px 6px #3d3e5d1c;
+      border-radius: 6px;
+      transition: 0.4s ease-in-out all;
+
+      &[type="submit"] {
+        background: aquamarine;
+        border-radius: 6px;
+        margin: 30px auto;
+      }
+    }
+    select {
+      border: 0;
+      box-shadow: 1px 3px 20px 2px #e5e6ffdb;
+      border-radius: 6px;
+      padding: 13px 20px;
+      margin: 10px;
+    }
+  }
+}
