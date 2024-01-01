@@ -1,12 +1,20 @@
 import { useNavigate } from "react-router-dom";
 import { useProducts } from "../context/ProductsContext";
 
-function Form() {
-  const { formSubmit, newProduct, setNewProduct } = useProducts();
+type MyFormProps = {
+  onSubmit: (event: React.FormEvent<HTMLFormElement>) => void;
+};
+
+function Form({ onSubmit }: MyFormProps) {
+  const { newProduct, setNewProduct } = useProducts();
   const navigate = useNavigate();
 
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    onSubmit(event);
+  };
+
   return (
-    <form onSubmit={formSubmit}>
+    <form onSubmit={handleSubmit}>
       <input
         type="text"
         name="title"
@@ -93,7 +101,7 @@ function Form() {
         }
       />
 
-      <input type="submit" value="Submit" onClick={() => navigate(-1)} />
+      <input type="submit" value="Submit" />
     </form>
   );
 }

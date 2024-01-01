@@ -67,7 +67,7 @@ function Products() {
     <div className="products">
       <h1>Products Home</h1>
 
-      <Link to={`/products/addn-product-page`}>
+      <Link to={`/products/add-new-product`}>
         {" "}
         <button className="add-product">Add new product</button>
       </Link>
