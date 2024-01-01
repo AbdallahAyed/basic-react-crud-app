@@ -92,7 +92,9 @@ function Products() {
                 <Link to={`/products/${product.id}`}>
                   <button>View</button>
                 </Link>
-                <button>Edit</button>
+                <Link to={`/products/edit-product/${product.id}`}>
+                  <button>Edit</button>
+                </Link>
                 <button onClick={() => deleteProduct(product)}>Delete</button>
               </td>
             </tr>

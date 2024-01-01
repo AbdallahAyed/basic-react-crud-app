@@ -19,7 +19,6 @@ function Form({ onSubmit }: MyFormProps) {
         type="text"
         name="title"
         placeholder="title"
-        required
         onChange={(e) =>
           setNewProduct({ ...newProduct, title: e.target.value })
         }
@@ -28,7 +27,6 @@ function Form({ onSubmit }: MyFormProps) {
         type="text"
         name="description"
         placeholder="description"
-        required
         onChange={(e) =>
           setNewProduct({ ...newProduct, description: e.target.value })
         }
@@ -37,7 +35,6 @@ function Form({ onSubmit }: MyFormProps) {
         type="number"
         name="id"
         placeholder="id"
-        required
         onChange={(e) =>
           setNewProduct({ ...newProduct, id: Number(e.target.value) })
         }
@@ -47,7 +44,6 @@ function Form({ onSubmit }: MyFormProps) {
           type="number"
           name="rate"
           placeholder="rate"
-          required
           onChange={(e) =>
             setNewProduct({
               ...newProduct,
@@ -60,7 +56,6 @@ function Form({ onSubmit }: MyFormProps) {
           type="number"
           name="count"
           placeholder="count"
-          required
           onChange={(e) =>
             setNewProduct({
               ...newProduct,
@@ -73,7 +68,6 @@ function Form({ onSubmit }: MyFormProps) {
         type="number"
         name="price"
         placeholder="price"
-        required
         onChange={(e) =>
           setNewProduct({ ...newProduct, price: Number(e.target.value) })
         }
@@ -81,7 +75,6 @@ function Form({ onSubmit }: MyFormProps) {
       />
       <select
         className="form-select"
-        required
         onChange={(e) =>
           setNewProduct({ ...newProduct, category: e.target.value })
         }
@@ -95,7 +88,6 @@ function Form({ onSubmit }: MyFormProps) {
         type="text"
         name="image"
         placeholder="put image link here"
-        required
         onChange={(e) =>
           setNewProduct({ ...newProduct, image: e.target.value })
         }

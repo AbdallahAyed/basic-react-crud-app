@@ -11,6 +11,7 @@ import Home from "./Home.tsx";
 import ProductDetails from "./ProductDetails.tsx";
 import AddProduct from "./AddProduct.tsx";
 import { ProductsProvider } from "./context/ProductsContext.tsx";
+import EditProduct from "./EditProduct.tsx";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/products/add-new-product",
         element: <AddProduct />,
+      },
+      {
+        path: "/products/edit-product/:id",
+        element: <EditProduct />,
       },
     ],
   },

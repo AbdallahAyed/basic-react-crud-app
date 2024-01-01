@@ -170,14 +170,14 @@
     },
     {
       "id": 35,
-      "title": "iphone 14 pro max",
-      "price": 1099.97,
-      "description": "an amazing phone for amazing users",
+      "title": "iphone 12",
+      "price": 100000,
+      "description": "",
       "category": "electronics",
-      "image": "https://assets.swappie.com/cdn-cgi/image/width=600,height=600,fit=contain,format=auto/swappie-iphone-14-pro-deep-purple.png?v=42",
+      "image": "",
       "rating": {
-        "rate": 9.5,
-        "count": 118
+        "rate": 0,
+        "count": 0
       }
     }
   ]
