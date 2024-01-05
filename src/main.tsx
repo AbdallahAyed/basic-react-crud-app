@@ -4,14 +4,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import App from "./App.tsx";
-import Products from "./Products.tsx";
-import Categories from "./Categories.tsx";
-import ErrorPage from "./ErrorPage.tsx";
-import Home from "./Home.tsx";
-import ProductDetails from "./ProductDetails.tsx";
-import AddProduct from "./AddProduct.tsx";
+import Products from "./pages/Products.tsx";
+import ErrorPage from "./pages/ErrorPage.tsx";
+import Home from "./pages/Home.tsx";
+import ProductDetails from "./pages/ProductDetails.tsx";
+import AddProduct from "./pages/AddProduct.tsx";
 import { ProductsProvider } from "./context/ProductsContext.tsx";
-import EditProduct from "./EditProduct.tsx";
+import EditProduct from "./pages/EditProduct.tsx";
 
 const router = createBrowserRouter([
   {
@@ -23,10 +22,6 @@ const router = createBrowserRouter([
       {
         path: "/products",
         element: <Products />,
-      },
-      {
-        path: "/categories",
-        element: <Categories />,
       },
       {
         path: "/products/:id",

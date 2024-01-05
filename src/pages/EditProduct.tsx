@@ -2,8 +2,8 @@ import axios from "axios";
 import { useParams } from "react-router-dom";
 import Swal from "sweetalert2";
 
-import Form from "./components/Form";
-import { useProducts } from "./context/ProductsContext";
+import Form from "../components/Form";
+import { useProducts } from "../context/ProductsContext";
 
 function EditProduct() {
   const { newProduct } = useProducts();

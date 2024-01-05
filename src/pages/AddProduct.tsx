@@ -1,5 +1,5 @@
-import Form from "./components/Form";
-import { useProducts } from "./context/ProductsContext";
+import Form from "../components/Form";
+import { useProducts } from "../context/ProductsContext";
 
 function AddProduct() {
   const { formSubmit } = useProducts();

@@ -25,18 +25,6 @@ function Sidebar() {
             Get All Products
           </Link>
         </li>
-        <li>
-          {" "}
-          <Link
-            to={"/categories"}
-            style={{
-              margin: "1rem",
-              textDecoration: "none",
-            }}
-          >
-            Get All Categories
-          </Link>
-        </li>
       </ul>
     </aside>
   );

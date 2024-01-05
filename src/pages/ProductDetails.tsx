@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import { ProductType } from "./Products";
-import Star from "./components/Star";
+import Star from "../components/Star";
 
 function ProductDetails() {
   const [product, setProduct] = useState<ProductType>();

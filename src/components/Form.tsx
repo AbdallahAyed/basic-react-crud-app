@@ -93,7 +93,7 @@ function Form({ onSubmit }: MyFormProps) {
         }
       />
 
-      <input type="submit" value="Submit" />
+      <input type="submit" value="Submit" onSubmit={() => navigate(-1)} />
     </form>
   );
 }

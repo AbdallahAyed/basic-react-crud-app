@@ -1,5 +1,5 @@
 import { useState, createContext, ReactNode, useContext } from "react";
-import { ProductType } from "../Products";
+import { ProductType } from "../pages/Products";
 import axios from "axios";
 import Swal from "sweetalert2";
 
